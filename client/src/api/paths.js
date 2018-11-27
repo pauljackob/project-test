@@ -14,7 +14,7 @@ export const getPath = id => {
   return fetch(`${API_URL}/paths/${id}`).then(response => response.json());
   };
 
-export const createPath = (title,  explanation, exercise, evaluation) => {
+export const createPath = () => {
   return fetch(`${API_URL}/path`, {
     method: 'POST',
     headers: headers,
